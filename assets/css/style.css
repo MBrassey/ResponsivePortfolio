@@ -117,12 +117,13 @@ a.nav-item:hover {
 }
 
 .content {
-    padding: 0;
+    display: flex;
+    justify-content: center;
     margin-left: 3%;
     width: 75%;
     font-size: 23px;
     padding: 12px;
-
+    line-height: 1.5;
 }
 
 .content a {
@@ -131,8 +132,9 @@ a.nav-item:hover {
 }
 
 .content div {
-    display: inline-flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
 }
 
 /* Hero */
@@ -161,23 +163,22 @@ a.nav-item:hover {
 }
 
 /* About Me */
-.about-me {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    grid-gap: 20px;
-    grid-auto-flow: dense;
-}
+
 
 /* Work */
 .grid-container {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     width: 100%;
+    grid-auto-flow: dense;
 }
 
 .grid-item {
-    border: 4px solid var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid var(--secondary-color);
     margin: 20px;
     padding: 30px 30px 30px 0;
     background-size: 200%;
