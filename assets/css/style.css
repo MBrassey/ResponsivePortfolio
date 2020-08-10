@@ -8,6 +8,7 @@
 :root {
     --primary-color: #485A77;
     --secondary-color: #9ECACC;
+    --secondary-active: #7ac6ca;
     --tertiary-color: #32363C;
 }
 
@@ -15,4 +16,103 @@ body {
     color: var(--primary-color);
     background-color: var(--tertiary-color);
     font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    padding: 12px 35px 12px 0px;
+    background-color: var(--tertiary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-position: 80%;
+    background-attachment: fixed;
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+header a:hover {
+    color: var(--secondary-active);
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Animated Navigation Underline */
+a.nav-item, a.nav-item:visited {
+    text-decoration: none;
+    border-bottom: 12px solid var(--tertiarary-color);
+    transition: border-color 0.3s;
+}
+a.nav-item:hover {
+    border-bottom: 12px solid var(--secondary-active);
+}
+
+/* Layout Schemes */
+.hero-sub,
+.logo-text {
+    
+    width: 25%;
+    background-color: var(--secondary-color);
+    padding: 12px 12px 12px 0px;
+}
+
+.logo-text h1 {
+    text-align: right;
+
+}
+
+/* Hero Styles */
+.hero {
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    background-image: url("../img/hero-bg.png");
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+
+.hero-sub {
+    width: 35%;
+    margin: 0px;
+    text-align: center;
+    margin-right: 3%;
+}
+
+.hero-sub h2 {
+    font-size: 35px;
+    color: var(--primary-color);
 }
