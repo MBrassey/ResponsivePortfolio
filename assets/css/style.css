@@ -11,6 +11,8 @@
     --secondary-active: #7ac6ca;
     --tertiary-color: #32363c;
     --light-color: #cfd2d0;
+    --transparent-color: rgba(134, 179, 238, 0.3);
+    --secondary-color-alpha: rgba(154, 214, 210, 0.85);
 }
 
 body {
@@ -115,20 +117,24 @@ a.nav-item:hover {
 }
 
 .content {
-    padding: 0;
+    display: flex;
+    justify-content: center;
     margin-left: 3%;
     width: 75%;
     font-size: 23px;
     padding: 12px;
+    line-height: 1.5;
 }
+
 .content a {
     text-decoration: none;
     color: var(--primary-color);
 }
 
 .content div {
-    display: inline-flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
 }
 
 /* Hero */
@@ -157,15 +163,82 @@ a.nav-item:hover {
 }
 
 /* About Me */
-.about-me {
+
+
+/* Work */
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
     grid-auto-flow: dense;
 }
 
-/* Work */
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid var(--secondary-color);
+    margin: 20px;
+    padding: 30px 30px 30px 0;
+    background-size: 200%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.waviii {
+    background-image: url("../img/waviii.png");
+    background-size: cover;
+}
+
+.run-buddy {
+    background-image: url("../img/run_buddy.jpg");
+    background-size: cover;
+}
+
+.blog {
+    background-image: url("../img/blog.png");
+    background-size: cover;
+}
+
+.wallet {
+    background-image: url("../img/wallet.png");
+    background-size: cover;
+}
+
+.smart {
+    background-image: url("../img/smart.png");
+    background-size: cover;
+}
+
+#work {
+    background: var(--light-color);
+}
+
+#work .blue-layer {
+    background: var(--secondary-color-alpha);
+}
+
+#work .grid-item {
+    position: relative;
+}
+
+#work .grid-item::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: var(--transparent-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    opacity: 0;
+}
+
+#work .grid-item:hover.grid-item::after {
+    opacity: 1;
+    transition: 0.5s;
+}
 
 /* Contact Me */
 #contact-me .content div {
