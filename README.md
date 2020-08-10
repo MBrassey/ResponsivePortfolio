@@ -6,6 +6,6 @@
 - [x] [CSS enhancements & optimizations](https://github.com/luc1dLife/Advanced_CSS_Portfolio/issues/4) 
 - [x] [Addition of personal content & resources](https://github.com/luc1dLife/Advanced_CSS_Portfolio/issues/5)
 <h6><p align="right">[ Click the below image to view the webapplication ]</p></h6>
-<a href="#">
+<a href="https://luc1dlife.github.io/Advanced_CSS_Portfolio/">
   <img src="#" alt="Challenge Mockup">
 </a>
