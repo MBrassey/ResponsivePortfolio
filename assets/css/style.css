@@ -6,11 +6,11 @@
 }
 
 :root {
-    --primary-color: #485A77;
-    --secondary-color: #9ECACC;
+    --primary-color: #485a77;
+    --secondary-color: #9ecacc;
     --secondary-active: #7ac6ca;
-    --tertiary-color: #32363C;
-    --light-color: #CFD2D0;
+    --tertiary-color: #32363c;
+    --light-color: #cfd2d0;
 }
 
 body {
@@ -76,7 +76,8 @@ nav ul li {
 }
 
 /* Animated Navigation Underline */
-a.nav-item, a.nav-item:visited {
+a.nav-item,
+a.nav-item:visited {
     text-decoration: none;
     border-bottom: 12px solid var(--tertiarary-color);
     transition: border-color 0.3s;
@@ -95,7 +96,6 @@ a.nav-item:hover {
 
 .logo-text h1 {
     text-align: right;
-
 }
 
 .container {
@@ -118,9 +118,18 @@ a.nav-item:hover {
     padding: 0;
     margin-left: 3%;
     width: 75%;
+    font-size: 23px;
+    padding: 12px;
+}
+.content a {
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
-
+.content div {
+    display: inline-flex;
+    justify-content: space-between;
+}
 
 /* Hero */
 .hero {
@@ -149,7 +158,6 @@ a.nav-item:hover {
 
 /* About Me */
 .about-me {
-    background-color: var(--light-color);
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr);
@@ -165,11 +173,18 @@ a.nav-item:hover {
 }
 
 #contact-me .content a {
-    font-size: large;
-    border-bottom: 2px solid var(--secondary-color);
-    line-height: 2.0;
-    padding: 10px;
+    font-size: 34px;
+    line-height: 2;
+    padding: 12px;
 }
 
-
-
+/* Footer */
+footer {
+    padding: 12px 35px 12px 0px;
+    text-align: center;
+    color: var(--secondary-color);
+    background-color: var(--tertiary-color);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
