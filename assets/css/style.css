@@ -25,6 +25,7 @@ body {
 
 /* [375 - 599px] (iPhone6/7/8/X Plus iOS11 & 12) */
 @media only screen and (max-width: 599px) {
+    /* Mobile Only Block */
     body {
         font-family: Arial, Helvetica, sans-serif;
       }
@@ -51,8 +52,9 @@ body {
       .topnav a {
         color: var(--primary-colorS);
         padding: 14px 16px;
+        font-weight: bold;
         text-decoration: none;
-        font-size: 27px;
+        font-size: 6vw;
         display: block;
       }
       
@@ -72,6 +74,27 @@ body {
       .nav-links, .logo-text {
           display: none;
       }
+
+    /* Hero */
+    .hero {
+        min-height: 30%;
+        background-image: url(../img/hero-bg.png);
+        background-size: 190%;
+        background-attachment: initial;
+        background-position-y: 0%;
+        background-position-x: 80%;
+
+    }
+
+    .hero-sub {
+        width: 100%;
+        text-align: right;
+        font-size: 4vw;
+        padding-right: 3%;
+        padding-top: 3%;
+        color: var(--primary-color);
+
+    }
 
 }
   
