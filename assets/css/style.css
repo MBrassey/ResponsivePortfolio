@@ -22,6 +22,15 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+footer {
+    padding: 12px 35px 12px 0px;
+    text-align: center;
+    color: var(--secondary-color);
+    background-color: var(--tertiary-color);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 
 /* [375 - 599px] (iPhone6/7/8/X Plus iOS11 & 12) */
 @media only screen and (max-width: 599px) {
@@ -77,12 +86,12 @@ body {
 
     /* Hero */
     .hero {
-        min-height: 33vw;
+        min-height: 40vw;
         background-image: url(../img/hero-bg.png);
         background-size: 190%;
         background-attachment: initial;
-        background-position-y: 5%;
-        background-position-x: 80%;
+        background-position-y: 1,7%;
+        background-position-x: 77%;
 
     }
 
@@ -206,9 +215,17 @@ body {
     .contact-container {
         background-color: var(--tertiary-color);
         padding: 3vw;
+        padding-bottom: 10vw;
         justify-content: left;
     }
-      
+      .contact h2 {
+        color: var(--primary-color);
+        text-align: right;
+        font-size: 6vw;
+        padding-right: 3%;
+        padding-top: 3%;
+      }
+
       .contact a {
         color: var(--secondary-color);
         padding: 14px 16px;
