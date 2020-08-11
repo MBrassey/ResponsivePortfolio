@@ -50,7 +50,7 @@ body {
       }
       
       .topnav a {
-        color: var(--primary-colorS);
+        color: var(--secondary-color);
         padding: 14px 16px;
         font-weight: bold;
         text-decoration: none;
@@ -59,7 +59,7 @@ body {
       }
       
       .topnav a.icon {
-        background: var(--primary-colorS);
+        background: var(--tertiary-color);
         display: block;
         position: absolute;
         right: 0;
@@ -101,7 +101,7 @@ body {
         padding: 3vw;
         justify-content: left;
     }
-    
+
     .container h1 {
         width: 100%;
         color: var(--primary-color);
@@ -111,6 +111,7 @@ body {
         border-bottom: 1.5px solid var(--tertiary-color);
     }
     
+    /* Content */
     .content {
         display: flex;
         justify-content: center;
@@ -144,6 +145,8 @@ body {
         width: 100%;
         grid-auto-flow: dense;
     }
+
+    /* Work */
     
     .grid-item {
         display: flex;
@@ -198,7 +201,30 @@ body {
     .blue-layer p {
         font-size: 5vw;
     }
-    
+
+    /* Contact Me */
+    .contact-container {
+        background-color: var(--tertiary-color);
+        padding: 3vw;
+        justify-content: left;
+    }
+      
+      .contact a {
+        color: var(--secondary-color);
+        padding: 14px 16px;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 6vw;
+        display: block;
+      }
+      
+      .contact a.icon {
+        background: var(--tertiary-color);
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
 
 }
   
