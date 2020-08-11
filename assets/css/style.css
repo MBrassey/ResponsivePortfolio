@@ -261,3 +261,17 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+
+/* Media Query for tablets and larger */
+@media screen and (min-width: 575px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .grid-item.large {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+    }
+}
