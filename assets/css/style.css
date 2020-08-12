@@ -14,6 +14,8 @@
     --Night: #181818;
     --Stone: #6C757D;
     --Zinc: #CFD2D0;
+    --Absinthe-alpha: rgba(163,222,158, 0.5);
+    --shadow-alpha: rgba(0, 0, 0, 0.5);
 
     --primary-color: #394B59;
     --secondary-color: #2994CB;
@@ -22,7 +24,6 @@
     --light-color: #CFD2D0;
     --transparent-color: rgba(134, 179, 238, 0.3);
     --secondary-color-alpha: rgba(154, 214, 210, 0.85);
-    --shadow-color-alpha: rgba(0, 0, 0, 0.5);
 }
 
 body {
@@ -125,7 +126,7 @@ footer {
         text-align: left;
         font-size: 6vw;
         padding-bottom: 1vw;
-        border-bottom: 1.5px solid var(--Stone);
+        border-bottom: 2px solid var(--Stone);
     }
     
     /* Content */
@@ -139,7 +140,7 @@ footer {
     }
     
     .content p {
-        color: var(--Anthracite);
+        color: var(--Sky);
         font-size: 5vw;
     }
 
@@ -172,7 +173,7 @@ footer {
         margin-bottom: 4vw;
         background-size: 200%;
         border-radius: 15px;
-        box-shadow: 0 0 10px var(--shadow-color-alpha);
+        box-shadow: 0 0 10px var(--shadow-alpha);
     }
 
     .waviii {
@@ -200,23 +201,23 @@ footer {
         background-size: cover;
     }
     
-    #work .blue-layer {
+    #work .Absinthe-cover {
         align-self: flex-end;
-        background: var(--Absinthe);
+        background: var(--Absinthe-alpha);
     }
     
     #work .grid-item {
         position: relative;
     }
 
-    .blue-layer h2 {
+    .Absinthe-cover h2 {
         font-size: 7vw;
         color: var(--Anthracite);
         padding-left: 3vw;
     }
 
-    .blue-layer p {
-        color: var(--Stone);
+    .Absinthe-cover p {
+        color: var(--Sky);
         font-size: 5vw;
         padding-left: 3vw;
     }
@@ -228,6 +229,7 @@ footer {
         padding-bottom: 10vw;
         justify-content: left;
     }
+
       .contact h2 {
         width: 100%;
         text-align: right;
@@ -245,15 +247,29 @@ footer {
         font-size: 6vw;
         display: block;
       }
-      
-      .contact a.icon {
-        background: var(--Absinthe);
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
+
+      .contactIcon {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        flex-wrap: wrap;
+        justify-items: last baseline;
+
       }
 
+      .contactIcon a {
+          color: var(--Azure);
+      }
+
+    .contactIcon a.left {
+        justify-self: left;
+
+    }
+
+    .contactIcon a.right {
+        justify-self: right;
+
+    }
 }
   
 /* [600 - 768px] (portrait tablets and large phones) */
@@ -264,7 +280,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    text-shadow: 0 0 10px var(--shadow-color-alpha);
+    text-shadow: 0 0 10px var(--shadow-alpha);
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -299,7 +315,7 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: normal;
     font-size: 1.55vw;
-    text-shadow: 0 0 10px var(--shadow-color-alpha);
+    text-shadow: 0 0 10px var(--shadow-alpha);
 }
 
 nav ul li {
@@ -322,7 +338,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    text-shadow: 0 0 10px var(--shadow-color-alpha);
+    text-shadow: 0 0 10px var(--shadow-alpha);
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -361,7 +377,7 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: normal;
     font-size: 1.55vw;
-    text-shadow: 0 0 10px var(--shadow-color-alpha);
+    text-shadow: 0 0 10px var(--shadow-alpha);
 }
 
 nav ul li {
@@ -475,7 +491,7 @@ a.nav-item:hover {
     padding: 30px 30px 30px 0;
     background-size: 200%;
     border-radius: 15px;
-    box-shadow: 0 0 10px var(--shadow-color-alpha);
+    box-shadow: 0 0 10px var(--shadow-alpha);
 }
 
 .waviii {
@@ -507,7 +523,7 @@ a.nav-item:hover {
     background: var(--light-color);
 }
 
-#work .blue-layer {
+#work .Absinthe-cover {
     background: var(--secondary-color-alpha);
 }
 
@@ -574,7 +590,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    text-shadow: 0 0 10px var(--shadow-color-alpha);
+    text-shadow: 0 0 10px var(--shadow-alpha);
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -613,7 +629,7 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: normal;
     font-size: 1.55vw;
-    text-shadow: 0 0 10px var(--shadow-color-alpha);
+    text-shadow: 0 0 10px var(--shadow-alpha);
 }
 
 nav ul li {
@@ -727,7 +743,7 @@ a.nav-item:hover {
     padding: 30px 30px 30px 0;
     background-size: 200%;
     border-radius: 15px;
-    box-shadow: 0 0 10px var(--shadow-color-alpha);
+    box-shadow: 0 0 10px var(--shadow-alpha);
 }
 
 .waviii {
@@ -759,7 +775,7 @@ a.nav-item:hover {
     background: var(--light-color);
 }
 
-#work .blue-layer {
+#work .Absinthe-cover {
     background: var(--secondary-color-alpha);
 }
 
@@ -818,7 +834,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    text-shadow: 0 0 10px var(--shadow-color-alpha);
+    text-shadow: 0 0 10px var(--shadow-alpha);
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -838,7 +854,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    text-shadow: 0 0 10px var(--shadow-color-alpha);
+    text-shadow: 0 0 10px var(--shadow-alpha);
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -877,7 +893,7 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: normal;
     font-size: 1.55vw;
-    text-shadow: 0 0 10px var(--shadow-color-alpha);
+    text-shadow: 0 0 10px var(--shadow-alpha);
 }
 
 nav ul li {
@@ -997,7 +1013,7 @@ a.nav-item:hover {
     padding: 30px 30px 30px 0;
     background-size: 200%;
     border-radius: 15px;
-    box-shadow: 0 0 10px var(--shadow-color-alpha);
+    box-shadow: 0 0 10px var(--shadow-alpha);
 }
 
 .waviii {
@@ -1029,7 +1045,7 @@ a.nav-item:hover {
     background: var(--light-color);
 }
 
-#work .blue-layer {
+#work .Absinthe-cover {
     background: var(--secondary-color-alpha);
 }
 
