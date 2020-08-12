@@ -6,10 +6,19 @@
 }
 
 :root {
-    --primary-color: #485a77;
-    --secondary-color: #9ecacc;
+    --Azure: #2994CB;
+    --Absinthe: #A3DE9E;
+    --Sky: #394B59;
+    --Anthracite: #2A2A2A;
+    --Jet: #141414;
+    --Night: #181818;
+    --Stone: #6C757D;
+    --Zinc: #CFD2D0;
+
+    --primary-color: #394B59;
+    --secondary-color: #2994CB;
     --secondary-active: #7ac6ca;
-    --tertiary-color: #32363c;
+    --tertiary-color: #262629;
     --light-color: #CFD2D0;
     --transparent-color: rgba(134, 179, 238, 0.3);
     --secondary-color-alpha: rgba(154, 214, 210, 0.85);
@@ -17,20 +26,26 @@
 }
 
 body {
-    color: var(--primary-color);
-    background-color: var(--light-color);
+    background-color: var(--Stone);
     font-family: Helvetica, Arial, sans-serif;
 }
 
 footer {
-    padding: 12px 35px 12px 0px;
+    padding: 12px 0px 12px 0px;
     text-align: center;
-    color: var(--secondary-color);
-    background-color: var(--tertiary-color);
+    font-weight: bold;
+    color: var(--Stone);
+    background-color: var(--Night);
     position: fixed;
     bottom: 0;
     width: 100%;
 }
+
+.copyleft {
+    display:inline-block;
+    font-weight: bold;
+    transform: rotate(180deg);
+  }
 
 /* [375 - 599px] (iPhone6/7/8/X Plus iOS11 & 12) */
 @media only screen and (max-width: 599px) {
@@ -42,15 +57,13 @@ footer {
       .mobile-container {
         max-width: 480px;
         margin: auto;
-        background-color: var(--tertiary-color);
         height: 500px;
-        color: var(--secondary-color);
         border-radius: 10px;
       }
       
       .topnav {
         overflow: hidden;
-        background-color: var(--tertiarary-color);
+        background-color: var(--Night);
         position: relative;
       }
       
@@ -59,7 +72,7 @@ footer {
       }
       
       .topnav a {
-        color: var(--secondary-color);
+        color: var(--Azure);
         padding: 14px 16px;
         font-weight: bold;
         text-decoration: none;
@@ -68,17 +81,12 @@ footer {
       }
       
       .topnav a.icon {
-        background: var(--tertiary-color);
+        background: var(--Anthracite);
         display: block;
         position: absolute;
         right: 0;
         top: 0;
-      }
-      
-      .name {
-        color: var(--primary-color);
-        
-      }
+      }  
 
       .nav-links, .logo-text {
           display: none;
@@ -95,29 +103,29 @@ footer {
 
     }
 
-    .hero-sub {
+    .hero-sub h2 {
         width: 100%;
         text-align: right;
-        font-size: 4vw;
-        padding-right: 3%;
+        font-size: 6vw;
+        padding-right: 4%;
         padding-top: 3%;
-        color: var(--primary-color);
+        color: var(--Absinthe);
 
     }
 
     .container {
-        background-color: var(--light-color);
+        background-color: var(--Zinc);
         padding: 3vw;
         justify-content: left;
     }
 
     .container h1 {
         width: 100%;
-        color: var(--primary-color);
+        color: var(--Azure);
         text-align: left;
-        font-size: 5vw;
+        font-size: 6vw;
         padding-bottom: 1vw;
-        border-bottom: 1.5px solid var(--tertiary-color);
+        border-bottom: 1.5px solid var(--Stone);
     }
     
     /* Content */
@@ -131,13 +139,12 @@ footer {
     }
     
     .content p {
-        color: var(--primary-color);
+        color: var(--Anthracite);
         font-size: 5vw;
     }
 
     .content a {
         text-decoration: none;
-        color: var(--primary-color);
     }
     
     .content div {
@@ -161,8 +168,7 @@ footer {
         display: flex;
         min-height: 50vw;
         justify-content: center;
-
-        border: 3px solid var(--secondary-color);
+        border: 3px solid var(--Absinthe);
         margin-bottom: 4vw;
         background-size: 200%;
         border-radius: 15px;
@@ -196,7 +202,7 @@ footer {
     
     #work .blue-layer {
         align-self: flex-end;
-        background: var(--secondary-color-alpha);
+        background: var(--Absinthe);
     }
     
     #work .grid-item {
@@ -205,29 +211,34 @@ footer {
 
     .blue-layer h2 {
         font-size: 7vw;
+        color: var(--Anthracite);
+        padding-left: 3vw;
     }
 
     .blue-layer p {
+        color: var(--Stone);
         font-size: 5vw;
+        padding-left: 3vw;
     }
 
     /* Contact Me */
     .contact-container {
-        background-color: var(--tertiary-color);
+        background-color: var(--Night);
         padding: 3vw;
         padding-bottom: 10vw;
         justify-content: left;
     }
       .contact h2 {
-        color: var(--primary-color);
+        width: 100%;
         text-align: right;
         font-size: 6vw;
-        padding-right: 3%;
+        padding-right: 4%;
         padding-top: 3%;
+        color: var(--Absinthe);
       }
 
       .contact a {
-        color: var(--secondary-color);
+        color: var(--Azure);
         padding: 14px 16px;
         font-weight: bold;
         text-decoration: none;
@@ -236,7 +247,7 @@ footer {
       }
       
       .contact a.icon {
-        background: var(--tertiary-color);
+        background: var(--Absinthe);
         display: block;
         position: absolute;
         right: 0;
