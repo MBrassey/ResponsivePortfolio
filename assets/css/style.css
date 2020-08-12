@@ -39,7 +39,6 @@ footer {
     background-color: var(--Night);
     position: fixed;
     bottom: 0;
-
     width: 100%;
 }
 
@@ -409,7 +408,6 @@ footer {
     .grid-container {
         display: grid;
         grid-template-columns: repeat(2, 2fr);
-        grid-template-rows: repeat(3, 2fr);
         width: 80vw;
         flex-flow: initial;
     }
@@ -440,6 +438,10 @@ footer {
     .run-buddy {
         background-image: url("../img/run_buddy.jpg");
         background-size: cover;
+    }
+
+    .run-buddy.Absinthe-cover {
+        align-items: baseline;
     }
 
     .blog {
@@ -748,10 +750,6 @@ footer {
     .smart {
         background-image: url("../img/smart.png");
         background-size: cover;
-    }
-
-    #work {
-        background: var(--light-color);
     }
 
     #work .Absinthe-cover {
