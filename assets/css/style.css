@@ -555,7 +555,7 @@ footer {
 
     /* Header */
     header {
-        background-color: var(--tertiary-color);
+        background-color: var(--Night);
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -569,17 +569,17 @@ footer {
     header h1 {
         font-weight: bold;
         font-size: 28px;
-        color: var(--primary-color);
+        color: var(--Sky);
         padding-left: 3%;
     }
 
     header a {
         text-decoration: none;
-        color: var(--secondary-color);
+        color: var(--Azure);
     }
 
     header a:hover {
-        color: var(--secondary-active);
+        color: var(--Absinthe);
     }
 
     header nav {
@@ -597,7 +597,7 @@ footer {
     header nav ul li a {
         padding: 10px 15px;
         font-weight: normal;
-        font-size: 1.55vw;
+        font-size: 28px;
         text-shadow: 0 0 10px var(--shadow-alpha);
     }
 
@@ -614,11 +614,11 @@ footer {
     a.nav-item,
     a.nav-item:visited {
         text-decoration: none;
-        border-bottom: 12px solid var(--tertiarary-color);
+        border-bottom: 18px solid var(--Night);
         transition: border-color 0.3s;
     }
     a.nav-item:hover {
-        border-bottom: 12px solid var(--secondary-active);
+        border-bottom: 18px solid var(--Azure);
     }
 
     /* Reused */
