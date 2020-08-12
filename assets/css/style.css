@@ -49,7 +49,7 @@ footer {
     transform: rotate(180deg);
 }
 
-/* [375 - 767px] (iPhone/Android Mobile & Tablet) */
+/* [50 - 767px] (Wear/iPhone/Android Mobile & Tablet) */
 @media only screen and (max-width: 767px) {
     /* Header */
     body {
@@ -379,7 +379,7 @@ footer {
 
     /* Hero */
     .hero {
-        height: 260px;
+        height: 270px;
         display: flex;
         justify-content: right;
         flex-wrap: wrap;
@@ -393,7 +393,7 @@ footer {
     .hero-sub {
         width: 48%;
         text-align: center;
-        margin-top: 190px;
+        margin-top: 205px;
         margin-right: 3%;
         margin-bottom: 12px;
     }
@@ -410,7 +410,7 @@ footer {
         display: grid;
         grid-template-columns: repeat(2, 2fr);
         grid-template-rows: repeat(3, 2fr);
-        width: 90vw;
+        width: 80vw;
         flex-flow: initial;
     }
 
@@ -422,12 +422,13 @@ footer {
         margin: 12px;
         border-radius: 15px;
         box-shadow: 0 0 10px var(--shadow-alpha);
+        width: 27vw;
     }
 
     .grid-item.large {
         grid-column: 1 / span 2;
         grid-row: 1 / span 2;
-        
+        width: 57vw;
     }
 
     .waviii {
@@ -465,23 +466,6 @@ footer {
 
     #work .grid-item {
         position: relative;
-    }
-
-    #work .grid-item::after {
-        content: "";
-        height: 100%;
-        width: 100%;
-        background: var(--transparent-color);
-        position: absolute;
-        top: 0;
-        left: 0;
-        border-radius: 15px;
-        opacity: 0;
-    }
-
-    #work .grid-item:hover.grid-item::after {
-        opacity: 1;
-        transition: 0.5s;
     }
 
     /* Contact Me */
