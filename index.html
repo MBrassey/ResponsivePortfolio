@@ -2,35 +2,65 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Matthew Brassey</title>
 
         <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+      <!-- Start Mobile Only Section -->
+      <div class="mobile-container">
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+          <a href="#home" class="name">Matthew Brassey</a>
+          <div id="myLinks">
+            <a href="#about-me">About Me</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact Me</a>
+            <a href="#resume">Resume</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      <!-- End Mobile Only Section -->        
+
         <!-- Header -->
         <header>
             <div class="logo-text">
                 <h1>Matthew Brassey</h1>
             </div>
-
-            <!-- Navigation -->
+            <div class="nav-links">
+        <!-- Navigation -->
             <nav>
                 <ul>
                     <li>
-                        <a class="nav-item" href="#about-me">About Me</a>
+                        <a class="nav-item" id="nav-item" href="#about-me">About Me</a>
                     </li>
                     <li>
-                        <a class="nav-item" href="#work">Work</a>
+                        <a class="nav-item" id="nav-item" href="#work">Work</a>
                     </li>
                     <li>
-                        <a class="nav-item" href="#contact-me">Contact Me</a>
+                        <a class="nav-item" id="nav-item" href="#contact">Contact Me</a>
                     </li>
                     <li>
-                        <a class="nav-item" href="assets/doc/resume.docx">Resume</a>
+                        <a class="nav-item" id="nav-item" href="assets/doc/resume.docx">Resume</a>
                     </li>
                 </ul>
-            </nav>
+            </nav> <!-- close nav-links -->
+            </div>
         </header>
 
         <!-- hero/jumbotron -->
@@ -61,66 +91,61 @@
             <article class="content">
               <div class="grid-container">
                 <a class="grid-item large waviii" href="https://waviii.herokuapp.com/admin/Swap" target="_blank">
-                  <div class="blue-layer">
-                    <h2>Token Exchange Component</h2>
-                    <p>React/Web3/Solidity</p>
+                  <div class="Absinthe-cover">
+                    <h2>Token Swap</h2>
+                    <p>React /Web3 /Solidity</p>
                   </div>
                 </a>
                 <a class="grid-item wallet" href="https://github.com/luc1dLife/wavWallet" target="_blank">
-                  <div class="blue-layer">
-                    <h2>ERC-20 Token Wallet</h2>
-                    <p>React/Web3</p>
+                  <div class="Absinthe-cover">
+                    <h2>Token Wallet</h2>
+                    <p>React /Web3</p>
                   </div>
                 </a>
                 <a class="grid-item smart" href="https://github.com/luc1dLife/SmartContracts" target="_blank">
-                  <div class="blue-layer">
-                    <h2>Smart Contracts</h2>
+                  <div class="Absinthe-cover">
+                    <h2>Smart Contract</h2>
                     <p>Solidity</p>
                   </div>
                 </a>
                 <a class="grid-item blog" href="https://luc1dlife.github.io/" target="_blank" >
-                  <div class="blue-layer">
+                  <div class="Absinthe-cover">
                     <h2>Personal Blog</h2>
-                    <p>HTML/AJAX/jQuery</p>
+                    <p>HTML /AJAX /jQuery</p>
                   </div>
                 </a>
                 <a class="grid-item run-buddy" href="https://luc1dlife.github.io/run-buddy/" target="_blank" >
-                  <div>
-                    <div class="blue-layer">
+                    <div class="Absinthe-cover">
                       <h2>Run Buddy</h2>
-                      <p>HTML/CSS</p>
+                      <p>HTML /CSS</p>
                     </div>
-                  </div>
                 </a>
-              </div>
             </article>
           </section>
 
         <!-- Contact Me -->
-        <section id="contact-me" class="container">
-            <h1>Contact Me</h1>
-            <article class="content">
-                <div>
-                    <a class="nav-item" href="tel:7777777777">777.777.7777</a>
-                </div>
-                <div>
-                    <a class="nav-item" href="mailto:matt[at]waviii.io">matt[at]waviii.io</a>
-                </div>
-                <div>
-                    <a class="nav-item" href="https://github.com/luc1dLife" target="_blank">GitHub</a>
-                </div>
-                <div>
-                    <a class="nav-item" href="https://www.freecodecamp.org/luc1d" target="_blank">FreeCodeCamp</a>
-                </div>
-                <div>
-                    <a class="nav-item" href="https://www.linkedin.com/in/matthew-brassey-7518711b2/" target="_blank">LinkedIn</a>
-                </div>
+        <section id="contact" class="contact-container">
+            <article class="contact-content">
+              <div class="contact">
+                <h2>Contact Me</h2>
+                <div class="contactIcon">
+                    <a class="left" href="tel:3141592653">314.159.2653</a>
+                    <a class="right" href="tel:3141592653"><i class="fa fa-mobile"></i></a>
+                    <a class="left" href="mailto:matt[at]waviii.io">matt[@]waviii.io</a>
+                    <a class="right" href="mailto:matt[at]waviii.io"><i class="fa fa-envelope-o"></i></a>
+                    <a class="left" href="https://github.com/luc1dLife" target="_blank">GitHub</a>
+                    <a class="right" href="https://github.com/luc1dLife"><i class="fa fa-github"></i></a>
+                    <a class="left" href="https://www.linkedin.com/in/matthew-brassey-7518711b2/" target="_blank">LinkedIn</a>
+                    <a class="right" href="https://www.linkedin.com/in/matthew-brassey-7518711b2/"><i class="fa fa-linkedin-square"></i></a>
+                </div>    
+              </div>
             </article>
         </section>
 
         <!-- Footer -->
         <footer>
-            <p>Matthew Brassey 2020</p>
+          <p><span class="copyleft">&copy;</span> Matthew Brassey 2020</p>
         </footer>
+      </div> <!-- close main -->
     </body>
 </html>
