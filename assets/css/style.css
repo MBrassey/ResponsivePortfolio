@@ -654,21 +654,21 @@ footer {
 
     /* Hero */
     .hero {
-        height: 260px;
+        height: 363px;
         display: flex;
         justify-content: right;
         flex-wrap: wrap;
         background-image: url("../img/hero-bg.png");
         background-size: cover;
-        background-position: center;
         background-attachment: fixed;
-        background-position: 80%;
+        background-position: 90%;
+        background-position-y: -2vw;
     }
 
     .hero-sub {
         width: 393px;
         text-align: center;
-        margin-top: 196px;
+        margin-top: 290px;
         margin-right: 3%;
         margin-bottom: 12px;
     }
@@ -714,8 +714,6 @@ footer {
         background-image: url("../img/run_buddy.jpg");
         background-size: cover;
     }
-
-   
 
     .blog {
         background-image: url("../img/blog.png");
@@ -779,38 +777,36 @@ footer {
     .contact-container {
         background-color: var(--Night);
         padding: 3vw;
-        padding-bottom: 10vw;
-        justify-content: left;
+        padding-bottom: 3vw;
     }
 
     .contact h2 {
+        font-size: 35px;
+        padding: 0.4vw 3vw 0.4vw 0.4vw;
         width: 100%;
         text-align: right;
-        font-size: 35px;
-        padding-right: 4%;
-        padding-top: 3%;
+        padding-top: 0vw;
         color: var(--Absinthe);
     }
 
     .contact a {
         color: var(--Azure);
-        padding: 14px 16px;
+        padding: 30px 32px;
         font-weight: bold;
         text-decoration: none;
-        font-size: 36px;
-        display: block;
+        font-size: 2vw;
+        display: inline-block;
     }
 
-    .contactIcon a {
-        color: var(--Azure);
+    .contactIcon {
+        display: inline;
+        list-style-type: none;
         text-align: center;
     }
 
-    .contactIcon a.left {
-        justify-self: left;
-    }
-
-    .contactIcon a.right {
-        justify-self: right;
+    .contactIcon li {
+        display: inline-block;
+        font-size: 20px;
+        padding: 20vw;
     }
 }
