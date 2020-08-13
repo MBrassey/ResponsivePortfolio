@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue-black: #334a6b;
+    --blue-white: #d5dfed;
+    --navy: #2c3642;
+    --light-blue: #9ad6d2;
+    --fire-red: rgb(235, 85, 52)
+}
+
+body {
+    color: var(--blue-black);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--blue-white);
+}
+
+header {
+    background-color: var(--navy);
+    padding: 20px 0 20px 0;
+}
+
+header h1 {
+    background-color: var(--light-blue);
+    display: block;
+    text-align: center;
+    align-items: center;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: var(--navy);
+}
+
+nav ul {
+    list-style: none;
+    width: 100%;
+    display: inline-block;
+    height: 20px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 2px 0 2px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: large;
+    color: var(--light-blue);
+    padding: 10px;
+    border-bottom: 3px solid var(--light-blue);
+    line-height: 3.0;
+}
+
+.hero {
+    background-image: url("../images/profile.jpg");
+    background-size: cover;
+    background-position: 50% 35%;
+    height: 200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.hero div {
+    background: var(--light-blue);
+    color: var(--blue-black);
+    padding: 5px;
+    border-bottom-left-radius: 10px;
+}
+
+.section-title {
+    text-align: center;
+    border-bottom: 5px solid var(--blue-black);
+    border-top: 5px solid var(--blue-black);
+    background-color: var(--light-blue);
+}
+
+.section-content {
+    font-size: small;
+    padding: 20px;
+}
+
+.section-content p {
+    line-height: 1.5;
+}
+
+#about-me p {
+    font-size: medium;
+    text-align: center;
+}
+
+#work {
+    background: var(--navy);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+}
+
+.grid-item {
+    border: 2px solid var(--navy);
+    margin: 20px;
+    padding: 30px 30px 30px 0;
+    background-size: 200%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.section-content a {
+    text-decoration: none;
+    color: var(--blue-black);
+}
+
+.dnd-tracker {
+    background-image: url("../images/d&dTracker.png");
+    background-size: cover;
+}
+
+.test-rabbit {
+    background-image: url("../images/test-rabbit.png");
+    background-size: cover;
+}
+
+.storm-ly {
+    background-image: url("../images/storm-ly.png");
+    background-size: cover;
+}
+
+.pastel-puzzles {
+    background-image: url("../images/README-zing.png");
+    background-position: 15% center;
+}
+
+.run-buddy {
+    background-image: url("../images/run-buddy.png");
+    background-size: cover;
+}
+
+.blue-background {
+    background-color: var(--light-blue);
+    padding: 20px;
+    width: 75%;
+}
+
+#contact-me .section-content div {
+    text-align: center;
+}
+
+#contact-me .section-content a {
+    font-size: large;
+    border-bottom: 2px solid var(--blue-black);
+    line-height: 2.0;
+    padding: 10px;
+}
+
+#resume .section-content {
+    display: flex;
+    justify-content: center;
+}
+
+#resume a {
+    width: 75%;
+    height: 200px;
+    background: var(--blue-black);
+    border-radius: 15px;
+    background-image: url(../images/resume.png);
+    background-size: cover;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--navy);
+    color: var(--light-blue);
+    padding: 10px;
+}
+
+/*MEDIA QUERY FOR SCREEN LARGER THAN MOBILE PHONE*/
+@media screen and (min-width: 575px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .grid-item.large {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+    }
+}
+
+/*MEDIA QUERY FOR SCREEN LARGER THAN TABLET*/
+
+@media screen and (min-width: 768px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+    }
+
+    header ul {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    header ul li {
+        margin: 0 10px 0 10px
+    }
+
+    header nav ul li a:hover {
+        background: var(--fire-red);
+        border-radius: 10px;
+        border: none;
+        transition: 0.5s;
+    }
+
+    header h1 {
+        padding: 10px 10px 10px 50px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .hero {
+        height: 500px
+    }
+
+    .section-content {
+        padding: 0;
+        width: 75%;
+    }
+
+    .section-container {
+        font-size: xx-large;
+        padding: 30px;
+        display: flex;
+        justify-content: left;
+    }
+
+    .section-container h1 {
+        background-color: var(--blue-white);
+        border: none;
+        margin-left: 100px;
+        padding-right: 20px;
+        text-align: right;
+        border-right: 5px solid var(--blue-black);
+        width: 200px;
+    }
+
+    #about-me p {
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    #work {
+        background: var(--blue-white)
+    }
+
+    #work .blue-background {
+        background: rgba(154, 214, 210, 0.85)
+    }
+
+    #work .grid-item {
+        position: relative;
+    }
+
+    #work .grid-item::after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        background: rgba(235, 85, 52, 0.3);
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 15px;
+        opacity: 0;
+    }
+    
+    #work .grid-item:hover.grid-item::after {
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+    #contact-me .section-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+    }
+
+    #contact-me a:hover {
+        background: var(--fire-red);
+        border-radius: 10px;
+        border: none;
+        transition: 0.5s;
+    }
+
+    #resume .section-content {
+        justify-content: left;
+        margin: 20px;
+    }
+
+    #resume a:hover {
+        border: 10px solid var(--fire-red);
+        transition: 0.5s;
+    }
+
+    #resume .section-content a {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+}
