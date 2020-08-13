@@ -271,6 +271,31 @@ footer {
     .contactIcon a.right {
         justify-self: right;
     }
+
+    .skills-container {
+        padding-top: 5rem !important;
+        padding-bottom: 5rem !important;
+        max-width: 75rem;
+        color: var(--Stone);
+    }
+
+    .dev-icons li {
+        display: inline-block;
+        font-size: 5vw;
+        list-style-type: none;
+        justify-content: center;
+    }
+
+    .dev-icons {
+        color: var(--Stone);
+        padding-left: .7vw;
+    }
+
+    .dev-icons a {
+        font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        color: var(--Azure);
+        font-size: 4.8vw;
+    }
 }
 
 /* [768 - 1200px] (landscape tablets & Laptops) */
@@ -535,6 +560,29 @@ footer {
 
     .contactIcon a.right {
         justify-self: right;
+    }
+
+    .skills-container {
+        padding-top: 5rem !important;
+        padding-bottom: 5rem !important;
+        color: var(--Stone);
+    }
+
+    .dev-icons li {
+        display: inline-block;
+        font-size: 4vw;
+        list-style-type: none;
+        justify-content: center;
+    }
+
+    .dev-icons {
+        color: var(--Stone);
+        padding-left: .7vw;
+    }
+
+    .dev-icons a {
+        font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        color: var(--Azure);
     }
 }
 
@@ -842,5 +890,9 @@ footer {
       
     .dev-icons .list-inline-item i:hover {
     color: var(--Azure);
+    }
+
+    .skillFlex {
+        min-width: 95vw;
     }
 }
