@@ -278,7 +278,6 @@ footer {
     .skills-container {
         padding-top: 5rem !important;
         padding-bottom: 5rem !important;
-        max-width: 75rem;
         color: var(--Stone);
     }
 
@@ -891,7 +890,6 @@ footer {
     .skills-container {
         padding-top: 5rem !important;
         padding-bottom: 5rem !important;
-        max-width: 75rem;
         color: var(--Stone);
     }
 
@@ -910,14 +908,15 @@ footer {
     .dev-icons a {
         font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
         color: var(--Azure);
-        font-size: 5vw;
+        font-size: 5.5vw;
     }
       
     .dev-icons .list-inline-item i:hover {
     color: var(--Azure);
     }
 
-    .skillFlex {
-        min-width: 95vw;
+    .dev-icons .list-inline-item {
+        padding-right: .7vw;
     }
+
 }
