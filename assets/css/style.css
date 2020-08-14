@@ -736,10 +736,12 @@ footer {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    /* Profile Picture */
+
     .content img {
         border: solid 4px var(--Stone);
         border-radius: 15px;
-        max-width: 33%;
+        max-width: 333px;
         float: right;
         margin: 1vw;
     }
