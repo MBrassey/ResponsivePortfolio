@@ -17,7 +17,7 @@ html {
     --Jet: #141414;
     --Night: #181818;
     --Stone: #6c757d;
-    --Zinc: #cfd2d0;
+    --Zinc: #CFD2D0;
     --Absinthe-alpha: rgba(163, 222, 158, 0.8);
     --Shadow-Alpha: rgba(0, 0, 0, 0.5);
 }
@@ -95,23 +95,22 @@ footer {
     }
 
     /* Hero */
+    
     .hero {
-        min-height: 40vw;
-        max-height: 42vw;
-        background-image: url(../img/hero-bg.png);
-        background-size: 190%;
-        background-attachment: local;
-        background-position-y: 1vw;
-        background-position-x: 77%;
+        height: 150px;
+        background-image: url("../img/hero-bg.png");
+        background-size: cover;
+        background-attachment: scroll;
+        background-position-x: 57%;
     }
 
     .hero-sub h2 {
         width: 100%;
         text-align: right;
-        font-size: 6vw;
+        font-size: 5vw;
         font-family: 'Aldrich', sans-serif;
         padding-right: 4%;
-        padding-top: 3%;
+        padding-top: 2.5%;
         color: var(--Absinthe);
         text-shadow: 0 0 10px var(--Shadow-Alpha);
     }
@@ -433,22 +432,20 @@ footer {
 
     /* Hero */
     .hero {
-        height: 260px;
         display: flex;
+        height: 262px;
         justify-content: right;
-        flex-wrap: wrap;
         background-image: url("../img/hero-bg.png");
         background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        background-position: 80%;
+        background-position: 100%;
+        background-position-x: 33%;
+
     }
 
     .hero-sub {
         width: 393px;
         text-align: center;
-        margin-top: 196px;
-        margin-right: 3%;
+        margin-top: 220px;
         margin-bottom: 12px;
     }
 
@@ -457,7 +454,7 @@ footer {
         font-family: 'Aldrich', sans-serif;
         padding: 0.4vw 0.4vw 0.4vw 0.4vw;
         color: var(--Absinthe);
-        box-shadow: 0 0 10px var(--Shadow-Alpha);
+
     }
 
     /* Work */
@@ -748,15 +745,11 @@ footer {
 
     /* Hero */
     .hero {
-        height: 363px;
-        display: flex;
+        height: 353px;
         justify-content: right;
-        flex-wrap: wrap;
         background-image: url("../img/hero-bg.png");
         background-size: cover;
-        background-attachment: fixed;
-        background-position: 90%;
-        background-position-y: -2vw;
+        background-position-x: -0vw;
     }
 
     .hero-sub {
