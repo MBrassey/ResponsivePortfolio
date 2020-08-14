@@ -161,6 +161,14 @@ footer {
         width: 100%;
     }
 
+    .content img {
+        border: solid 4px var(--Stone);
+        border-radius: 15px;
+        max-width: 33%;
+        float: right;
+        margin: 1vw;
+    }
+
     /* Work */
 
     .grid-container {
@@ -356,7 +364,7 @@ footer {
     }
 
     a.nav-item {
-        border-bottom: 11px solid var(--Azure);
+        border-bottom: 10px solid var(--Azure);
         font-family: 'Play', sans-serif;
     }
 
@@ -413,6 +421,14 @@ footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         width: 100%;
+    }
+
+    .content img {
+        border: solid 4px var(--Stone);
+        border-radius: 15px;
+        max-width: 33%;
+        float: right;
+        margin: 1vw;
     }
 
     /* Hero */
@@ -718,6 +734,14 @@ footer {
     .content div {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .content img {
+        border: solid 4px var(--Stone);
+        border-radius: 15px;
+        max-width: 33%;
+        float: right;
+        margin: 1vw;
     }
 
     /* Hero */
