@@ -1,4 +1,4 @@
-# Advanced CSS Portfolio Concept
+# Responsive CSS Portfolio Concept
 
 - [x] [Responsive Flexbox Layout](https://github.com/luc1dLife/Advanced_CSS_Portfolio/issues/1)
 - [x] [Flex & Grid Portfolio](https://github.com/luc1dLife/Advanced_CSS_Portfolio/issues/2)
