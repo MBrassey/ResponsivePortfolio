@@ -18,7 +18,7 @@ html {
     --Night: #181818;
     --Stone: #6c757d;
     --Zinc: #cfd2d0;
-    --Absinthe-alpha: rgba(163, 222, 158, 0.5);
+    --Absinthe-alpha: rgba(163, 222, 158, 0.8);
     --Shadow-Alpha: rgba(0, 0, 0, 0.5);
 }
 
@@ -278,7 +278,6 @@ footer {
     .skills-container {
         padding-top: 5rem !important;
         padding-bottom: 5rem !important;
-        max-width: 75rem;
         color: var(--Stone);
     }
 
@@ -383,7 +382,7 @@ footer {
         width: 100%;
         color: var(--Azure);
         text-align: left;
-        font-size: 4vw;
+        font-size: 3vw;
         text-shadow: 0 0 1px var(--Shadow-Alpha);
         font-family: 'Orbitron', sans-serif;
         padding-bottom: 1vw;
@@ -696,7 +695,7 @@ footer {
         margin-left: 0vw;
         padding-right: 18px;
         text-align: right;
-        font-size: 36px;
+        font-size: 32px;
         font-family: 'Orbitron', sans-serif;
         border-right: 3px solid var(--Sky);
         width: 130px;
@@ -850,11 +849,13 @@ footer {
         background-color: var(--Night);
         padding: 3vw;
         padding-bottom: 3vw;
+        justify-content: center;
+        text-align: center;
     }
 
     .contact h2 {
         font-size: 35px;
-        padding: 0.4vw 3vw 0.4vw 0.4vw;
+        padding: 0.4vw 0.4vw 0.4vw 0.4vw;
         width: 100%;
         text-align: right;
         font-family: 'Aldrich', sans-serif;
@@ -889,7 +890,6 @@ footer {
     .skills-container {
         padding-top: 5rem !important;
         padding-bottom: 5rem !important;
-        max-width: 75rem;
         color: var(--Stone);
     }
 
@@ -908,14 +908,15 @@ footer {
     .dev-icons a {
         font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
         color: var(--Azure);
-        font-size: 5vw;
+        font-size: 5.5vw;
     }
       
     .dev-icons .list-inline-item i:hover {
     color: var(--Azure);
     }
 
-    .skillFlex {
-        min-width: 95vw;
+    .dev-icons .list-inline-item {
+        padding-right: .7vw;
     }
+
 }
