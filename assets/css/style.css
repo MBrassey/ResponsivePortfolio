@@ -18,7 +18,7 @@ html {
     --Night: #181818;
     --Stone: #6c757d;
     --Zinc: #cfd2d0;
-    --Absinthe-alpha: rgba(163, 222, 158, 0.5);
+    --Absinthe-alpha: rgba(163, 222, 158, 0.8);
     --Shadow-Alpha: rgba(0, 0, 0, 0.5);
 }
 
@@ -850,11 +850,13 @@ footer {
         background-color: var(--Night);
         padding: 3vw;
         padding-bottom: 3vw;
+        justify-content: center;
+        text-align: center;
     }
 
     .contact h2 {
         font-size: 35px;
-        padding: 0.4vw 3vw 0.4vw 0.4vw;
+        padding: 0.4vw 0.4vw 0.4vw 0.4vw;
         width: 100%;
         text-align: right;
         font-family: 'Aldrich', sans-serif;
