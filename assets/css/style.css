@@ -17,7 +17,7 @@ html {
     --Jet: #141414;
     --Night: #181818;
     --Stone: #6c757d;
-    --Zinc: #cfd2d0;
+    --Zinc: #CFD2D0;
     --Absinthe-alpha: rgba(163, 222, 158, 0.8);
     --Shadow-Alpha: rgba(0, 0, 0, 0.5);
 }
@@ -749,14 +749,13 @@ footer {
     /* Hero */
     .hero {
         height: 363px;
-        display: flex;
         justify-content: right;
-        flex-wrap: wrap;
         background-image: url("../img/hero-bg.png");
         background-size: cover;
-        background-attachment: fixed;
-        background-position: 90%;
-        background-position-y: -2vw;
+        background-attachment: scroll;
+        background-position: 100%;
+        background-position-x: -10px;
+
     }
 
     .hero-sub {
