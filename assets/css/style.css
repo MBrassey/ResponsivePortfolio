@@ -382,7 +382,7 @@ footer {
         width: 100%;
         color: var(--Azure);
         text-align: left;
-        font-size: 4vw;
+        font-size: 3vw;
         text-shadow: 0 0 1px var(--Shadow-Alpha);
         font-family: 'Orbitron', sans-serif;
         padding-bottom: 1vw;
@@ -695,7 +695,7 @@ footer {
         margin-left: 0vw;
         padding-right: 18px;
         text-align: right;
-        font-size: 36px;
+        font-size: 32px;
         font-family: 'Orbitron', sans-serif;
         border-right: 3px solid var(--Sky);
         width: 130px;
