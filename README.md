@@ -1,7 +1,7 @@
 # Responsive CSS Portfolio Concept
 
 - [x] [Responsive Flexbox Layout](https://github.com/luc1dLife/Responsive_Portfolio/issues/1)
-- [x] [Flex & Grid Portfolio](https://github.com/luc1dLife/Responsive_Portfolio/issues/2)
+- [x] [Portfolio Grid CSS](https://github.com/luc1dLife/Responsive_Portfolio/issues/2)
 - [x] [3 Viewport Ranges - Media Queries](https://github.com/luc1dLife/Responsive_Portfolio/issues/3)
 - [x] [CSS Enhancements & Optimizations](https://github.com/luc1dLife/Responsive_Portfolio/issues/4) 
 - [x] [Addition of Personal Content & Resources](https://github.com/luc1dLife/Responsive_Portfolio/issues/5)
