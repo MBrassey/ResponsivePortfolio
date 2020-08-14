@@ -97,20 +97,20 @@ footer {
     /* Hero */
     
     .hero {
-        height: 210px;
+        height: 150px;
         background-image: url("../img/hero-bg.png");
         background-size: cover;
         background-attachment: scroll;
-        background-position-x: -179px;
+        background-position-x: 57%;
     }
 
     .hero-sub h2 {
         width: 100%;
         text-align: right;
-        font-size: 6vw;
+        font-size: 5vw;
         font-family: 'Aldrich', sans-serif;
         padding-right: 4%;
-        padding-top: 3%;
+        padding-top: 2.5%;
         color: var(--Absinthe);
         text-shadow: 0 0 10px var(--Shadow-Alpha);
     }
@@ -433,20 +433,19 @@ footer {
     /* Hero */
     .hero {
         display: flex;
-        height: 240px;
+        height: 262px;
         justify-content: right;
         background-image: url("../img/hero-bg.png");
         background-size: cover;
         background-position: 100%;
-        background-position-x: 0vw;
+        background-position-x: 33%;
 
     }
 
     .hero-sub {
         width: 393px;
         text-align: center;
-        margin-top: 175px;
-        margin-right: 3%;
+        margin-top: 220px;
         margin-bottom: 12px;
     }
 
@@ -455,7 +454,7 @@ footer {
         font-family: 'Aldrich', sans-serif;
         padding: 0.4vw 0.4vw 0.4vw 0.4vw;
         color: var(--Absinthe);
-        box-shadow: 0 0 10px var(--Shadow-Alpha);
+
     }
 
     /* Work */
@@ -746,7 +745,7 @@ footer {
 
     /* Hero */
     .hero {
-        height: 363px;
+        height: 353px;
         justify-content: right;
         background-image: url("../img/hero-bg.png");
         background-size: cover;
