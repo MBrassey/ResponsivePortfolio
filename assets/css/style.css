@@ -56,8 +56,8 @@ header a {
     background-size: cover;
 }
 
-.run-buddy {
-    background-image: url("../img/run_buddy.jpg");
+.UltraQueue {
+    background-image: url("https://raw.githubusercontent.com/luc1dLife/taskinator/master/assets/img/Preview.png");
     background-size: cover;
 }
 
@@ -465,7 +465,7 @@ footer {
         width: 57vw;
     }
 
-    .run-buddy.Absinthe-cover {
+    .UltraQueue.Absinthe-cover {
         align-items: baseline;
     }
 
