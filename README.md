@@ -1,4 +1,4 @@
-#### Portfolio
+## Portfolio
 
 Responsive portfolio concept written mostly in HTML/CSS.
 
@@ -20,9 +20,11 @@ Responsive portfolio concept written mostly in HTML/CSS.
 [<p align="center"><img src="assets/img/Preview.png">](https://MBrassey.github.io/ResponsivePortfolio/)
 
 #### Questions
+
 Contact me at [matt@brassey.io](mailto:matt@brassey.io) with any questions or comments.
 
 #### License
+
 `Responsive Portfolio` is published under the __CC0_1.0_Universal__ license.
 
 > The Creative Commons CC0 Public Domain Dedication waives copyright interest in a work you've created and dedicates it to the world-wide public domain. Use CC0 to opt out of copyright entirely and ensure your work has the widest reach. As with the Unlicense and typical software licenses, CC0 disclaims warranties. CC0 is very similar to the Unlicense.
